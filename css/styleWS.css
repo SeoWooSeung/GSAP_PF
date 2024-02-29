@@ -1,0 +1,129 @@
+:root {
+    --white-color: #f9f9f9;
+}
+
+.mmovie {
+    position: fixed;
+    inset: 0 0 0 0;
+}
+
+.mmovie video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 80px;
+    left: 80px;
+    z-index: 9999;
+}
+
+.header h1 {
+    color: var(--white-color);
+}
+
+.mainIntro {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.mainIntro h2 {
+    font-weight: 900;
+    /* font-family: serif; */
+    /* text-shadow: 4px 8px 30px rgba(0, 0, 0, 0.08); */
+}
+
+.mainIntro p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.mainIntro {
+    position: relative;
+}
+
+.mainIntro .itm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.mainIntro .itm .tit {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+
+    width: 1400px;
+}
+
+.mainIntro .itm .tit h2 {
+    font-size: 200px;
+    font-weight: 900;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.mainIntro .itm .tit .st02 {
+    display: inline-block;
+    font-size: 200px;
+    font-weight: 900;
+    transform: rotate(-25deg);
+    /* -webkit-transform: rotate(-45deg); */
+}
+
+.mainIntro .itm .tit .st03 {
+    display: inline-block;
+    font-size: 200px;
+    font-weight: 900;
+}
+
+.mainIntro .itm .tit:nth-of-type(2) p {
+    order: -1;
+    text-align: right;
+}
+
+.mainIntro .st01 {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    font-weight: 900;
+    font-size: 200px;
+    color: #f00;
+    z-index: 9999;
+}
+
+.mainIntro .st02 {
+    font-weight: 900;
+    font-size: 100px;
+    color: #ff0;
+    z-index: 9999;
+}
+
+.sub_visual {
+
+}
+
+.sub_visual .sub_banner {
+    text-align: center;
+    color: #fff;
+}
+
+.sub_visual .sub_banner h2 {
+    font-size: 200px;
+    font-weight: 900;
+}
+
+.sub_visual .sub_banner span {
+    font-size: 200px;
+    font-weight: 900;
+}
