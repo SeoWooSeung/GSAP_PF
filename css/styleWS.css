@@ -11,6 +11,8 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+
+    /* filter: blur(0px); */
 }
 
 body {
@@ -42,6 +44,8 @@ body {
     font-size: 16px;
     color: #fff;
     line-height: 1.4;
+
+    word-break: keep-all;
 }
 
 .mainIntro {
@@ -88,8 +92,8 @@ body {
 }
 
 .mainIntro .itm .tit:nth-of-type(2) p {
-    order: -1;
-    text-align: right;
+    /* order: ; */
+    text-align: left;
 }
 
 .mainIntro .st01 {
@@ -110,7 +114,8 @@ body {
 }
 
 .sub_visual {
-
+height: 100vh;
+background: #f00;
 }
 
 .sub_visual .sub_banner {
@@ -126,4 +131,52 @@ body {
 .sub_visual .sub_banner span {
     font-size: 200px;
     font-weight: 900;
+}
+
+/*  */
+
+.mainProfile {
+    position: relative;
+
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #f00;
+
+}
+
+.mainProfile .circle {
+    position: absolute;
+    display: block;
+
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 2500px;
+    height: 2500px;
+    border-radius: 50%;
+
+    background: #c20f0f;
+}
+
+.mainProfile .txtBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-transform: uppercase;
+    text-align: center;
+
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.con03 {
+    height: 100vh;
+    background: #000;
 }
